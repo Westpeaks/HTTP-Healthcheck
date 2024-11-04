@@ -1,0 +1,16 @@
+- url: https://fetch.com/
+  method: GET
+  name: fetch index page
+  
+
+- url: https://fetch.com/careers
+  method: GET
+  name: fetch careers page
+
+- url: http://httpstat.us/404
+  method: GET
+  name: httpstat 404 page
+
+- url: http://httpstat.us/200
+  method: GET
+  name: httpstat 200 page
