@@ -6,11 +6,11 @@ This script was built as a coding challenge demonstrating how to parse a yaml fi
 
 This script was written in python and uses the following libraries as dependancies:
 
-- yaml to parse the yaml file.
-- requests to make HTTP requests and return stauses
-- time to perform time based calculations.
-- schedule to run the script on every 15 seconds.
-- urllib.parse to parse and extract the base domain as a component.
+- **yaml** to parse the yaml file.
+- **requests** to make HTTP requests and return stauses
+- **time** to perform time based calculations.
+- **schedule** to run the script on every 15 seconds.
+- **urllib.parse** to parse and extract the base domain as a component.
 
 This sript does the following:
 
@@ -27,7 +27,8 @@ This sript does the following:
 
 ### Installation Instructions
 
-1. Clone this project.
-2. Ensure your YAML file is in the same format as example provided or use the example YAML file.
-3. Insert the correct file path in the parse_yaml() function.
-4. Save and run the .py file. Hit ctrl+c in the console to stop program.
+1. Install python if you have not done so. Install the necessary libraries. I used pip to install the libraries.
+2. Clone this project.
+3. Ensure your YAML file is in the same format as example provided or use the example YAML file.
+4. Insert the correct file path in the parse_yaml() function.
+5. Save and run the .py file. Hit ctrl+c in the console to stop program.
