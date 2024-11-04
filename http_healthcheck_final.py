@@ -33,6 +33,11 @@ def scheduled_task():
     
     print_availability_percentages()
     
+    
+def print_availability_percentages():
+    for domain, stats in domain_stats.items():
+        print(f"{domain} has {stats.availability_percentage()}% availability percentage")    
+    
 
 class DomainStats:
     def __init__(self):
@@ -51,11 +56,6 @@ class DomainStats:
     
 
 domain_stats = {}
-    
-    
-def print_availability_percentages():
-    for domain, stats in domain_stats.items():
-        print(f"{domain} has {stats.availability_percentage()}% availability percentage")
 
 
 def check_status(latency, status_code):
