@@ -111,6 +111,6 @@ def main():
 
 1. Install Python if you have not done so. Install the necessary libraries. I used pip to install the libraries.
 2. Clone this project.
-3. Ensure your YAML file is in the same format as example provided or use the example YAML file.
+3. Ensure your YAML file is in the same format as the https-sites.yml provided or use the example YAML file.
 4. Insert the correct file path in the parse_yaml() function.
 5. Save and run the .py file. Type ctrl+c in the console to stop program.
