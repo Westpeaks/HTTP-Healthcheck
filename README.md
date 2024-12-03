@@ -58,7 +58,7 @@ def scheduled_task():
 
 - Identifies and extracts the URL.
 - Makes a GET request to the URL and returns the latency and status code.
-- Detemines if the site is up or down based on the following parameters: UP = 200-299 status and latency of less than 500 miliseconds (ms). DOWN = Any other status code or a 200-299 with a latency higher than 500ms.
+- Determines if the site is up or down based on the following parameters: UP = 200-299 status and latency of less than 500 miliseconds (ms). DOWN = Any other status code or a 200-299 with a latency higher than 500ms.
 
 ```python
 class DomainStats:
@@ -83,7 +83,7 @@ def check_status(latency, status_code):
         return "DOWN"
 ```
 
-- Extracts the base domain from the potential of multiple subdomains and tests the base domain availability on the bases of the multiple subdomains listed.
+- Extracts the base domain from the potential multiple subdomains listed and tests the base domain availability.
   Ex. The yaml file may contain mutiple endpoints for the same domain (http://httpstat.us/404 and http://httpstat.us/200). The script will extract the domain and average the availability of both subdoamins. The result is that you will receive the availabilty of both subdomains combined.
 - Adds each base domain to a dictionary and attaches the statistics to produce the final outcome of providing an availability percentage. This allows the script to be run for multiple domains at one time.
 
